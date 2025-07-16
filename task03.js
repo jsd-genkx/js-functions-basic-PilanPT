@@ -17,9 +17,21 @@ Task 03: FizzBuzz Checker
 */
 
 // 👨‍💻 TODO-01: Write your code below to complete the task as described above.
+const fizzBuzz = function(Numbercheck) {
+
+    if (Numbercheck%3===0&&Numbercheck%5===0) {return "FizzBuzz"; 
+        
+    } else if (Numbercheck%3===0){ return "Fizz";
+
+    }else if(Numbercheck%5===0){     return "Buzz";
+
+    }   else  return "Not divisible by 3 or 5";
+}
 
 // Example Test Cases
-console.log(fizzBuzz(15)); // "FizzBuzz"
+
+
+console.log(fizzBuzz(29)); // "FizzBuzz"
 console.log(fizzBuzz(9)); // "Fizz"
-console.log(fizzBuzz(10)); // "Buzz"
-console.log(fizzBuzz(7)); // "Not divisible by 3 or 5"
+console.log(fizzBuzz(20)); // "Buzz"
+console.log(fizzBuzz(30)); // "Not divisible by 3 or 5"
